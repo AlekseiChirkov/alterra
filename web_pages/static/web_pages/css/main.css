@@ -173,6 +173,14 @@ a{
     font-size: 16px;
     line-height: 19px;
     text-align: center;
+    margin: 0 auto 168px auto;
+}
+.arrow{
+    width: 96px;
+    height: 96px;
+    padding: 15px;
+    border-radius: 100%;
+    background: rgba(0, 0, 0, 0.47);
 }
 .cards .details_btn{
     width: 215px;
@@ -180,7 +188,6 @@ a{
     background: #FFFFFF;
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
     border-radius: 8px;
-    margin: 0 auto;
     padding: 5px 0 0 0;
     text-align: center;
 }
@@ -192,6 +199,7 @@ a{
 }
 .recommended .details_btn{
     color: #008EF4;
+    margin: 168px auto 0 auto;
 }
 .marketing{
     background: linear-gradient(0deg, #F40067 8.09%, rgba(0, 142, 244, 0) 97.05%),
@@ -201,6 +209,7 @@ a{
 }
 .marketing .details_btn{
     color: #F40067;
+    margin: 432px auto 0 auto;
 }
 .design{
     background: linear-gradient(0deg, #98F400 8.09%, rgba(0, 142, 244, 0) 97.05%),
@@ -210,6 +219,7 @@ a{
 }
 .design .details_btn{
     color: #039F00;
+    margin: 432px auto 0 auto;
 }
 .notes{
     background: linear-gradient(0deg, #00F4BA 8.09%, rgba(0, 142, 244, 0) 97.05%),
@@ -219,6 +229,7 @@ a{
 }
 .notes .details_btn{
     color: #00AC83;
+    margin: 432px auto 0 auto;
 }
 .office{
     background: linear-gradient(0deg, #152C3D 8.09%, rgba(0, 142, 244, 0) 97.05%),
@@ -228,6 +239,7 @@ a{
 }
 .office .details_btn{
     color: #152C3D;
+    margin: 432px auto 0 auto;
 }
 
 
@@ -251,8 +263,8 @@ a{
 .request__btn{
     width: 400px;
     height: 60px;
-    background: #FFFFFF;
-    border: none;
+    background: none;
+    border: 2px solid #fff;
     border-radius: 8px;
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
@@ -260,12 +272,12 @@ a{
     font-size: 24px;
     line-height: 29px;
     text-align: center;
-    color: #1E2231;
+    color: #fff;
 }
 .request__btn:hover{
-    background: none;
-    border: 2px solid #fff;
-    color: white;
+    background: #fff;
+    border: none;
+    color: #1E2231;
 }
 
 

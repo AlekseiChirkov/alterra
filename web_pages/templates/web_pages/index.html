@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta content="width=device-width, initial-scale=1" name="viewport" />
-	<title>Document</title>
+	<title>AlTerra Creative Agency</title>
 	{% load static %}
 	<link rel="stylesheet" href="{% static 'web_pages/css/main.css' %}" type="text/css">
     <link rel="stylesheet"
@@ -17,11 +17,11 @@
 			crossorigin="anonymous"></script>
 </head>
 <body>
-	<div class="loading_wrapper">
-		<video onended="videoEnded()" class="video" autoplay>
-			<source src="{% static '/web_pages/videos/intro.mp4' %}" type="video/mp4">
-		</video>
-	</div>
+<!--	<div class="loading_wrapper">-->
+<!--		<video onended="videoEnded()" class="video" autoplay>-->
+<!--			<source src="{% static '/web_pages/videos/intro.mp4' %}" type="video/mp4">-->
+<!--		</video>-->
+<!--	</div>-->
 
 	<div class="content">
 		<video class="video" id="video" loop>
@@ -78,31 +78,27 @@
 										<div class="cards recommended">
 											<h3>Рекомендации</h3>
 											<p>Наши рекомендации и полезности для вас</p>
-											<img src="" alt="arrow">
+											<img src="{% static 'web_pages/images/icons/arrow.png' %}" alt="arrow" class="arrow">
 											<div class="details_btn">Подробнее</div>
 										</div>
 										<div class="cards marketing">
 											<h3>Рекомендации</h3>
 											<p>Наши рекомендации и полезности для вас</p>
-											<img src="" alt="arrow">
 											<div class="details_btn">Подробнее</div>
 										</div>
 										<div class="cards design">
 											<h3>Рекомендации</h3>
 											<p>Наши рекомендации и полезности для вас</p>
-											<img src="" alt="arrow">
 											<div class="details_btn">Подробнее</div>
 										</div>
 										<div class="cards notes">
 											<h3>Рекомендации</h3>
 											<p>Наши рекомендации и полезности для вас</p>
-											<img src="" alt="arrow">
 											<div class="details_btn">Подробнее</div>
 										</div>
 										<div class="cards office">
 											<h3>Рекомендации</h3>
 											<p>Наши рекомендации и полезности для вас</p>
-											<img src="" alt="arrow">
 											<div class="details_btn">Подробнее</div>
 										</div>
 									</div>
