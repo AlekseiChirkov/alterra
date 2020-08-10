@@ -32,7 +32,7 @@ a{
 
 .loading_wrapper{
     position: absolute;
-    top: -100px;
+    top: -150px;
     animation: hide 6s;
     z-index: -1;
 }
@@ -61,7 +61,7 @@ a{
 .content{
     width: 100%;
     position: absolute;
-    top: -100px;
+    top: -150px;
     z-index: -1;
 }
 .video{
@@ -121,9 +121,18 @@ a{
 .right_menu li{
     margin: 0 10px;
 }
-.dropdown__content{
+.dropdown__contacts{
     display: none;
     padding: 50px;
+    border: 2px solid #fff;
+    border-radius: 8px;
+}
+.contacts{
+    display: flex;
+    justify-content: space-between;
+}
+.dropdown__useful{
+    display: none;
     border: 2px solid #fff;
     border-radius: 8px;
 }
@@ -131,7 +140,8 @@ a{
     font-weight: bold;
 }
 .dropdown:hover .dropdown__content{
-    display: block;
+    display: flex;
+    align-items: center;
     position: absolute;
     background: rgba(0, 0, 0, 0.1);
     width: 400px;
@@ -142,10 +152,88 @@ a{
     height: 600px;
     left: -1200px;
 }
-.contacts{
-    display: flex;
-    justify-content: space-between;
+.cards{
+    width: 19%;
+    height: 95%;
+    margin: 0 auto;
+    text-align: center;
 }
+.cards h3{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+}
+.cards p{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+}
+.cards .details_btn{
+    width: 215px;
+    height: 40px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    margin: 0 auto;
+    padding: 5px 0 0 0;
+    text-align: center;
+}
+.recommended{
+    background: linear-gradient(0deg, #008EF4 8.09%, rgba(0, 142, 244, 0) 97.05%),
+                linear-gradient(0deg, rgba(0, 0, 0, 0.42), rgba(0, 0, 0, 0.42)),
+                url('{% web_pages/images/backgrounds/recommended.png %}');
+    border-radius: 8px;
+}
+.recommended .details_btn{
+    color: #008EF4;
+}
+.marketing{
+    background: linear-gradient(0deg, #F40067 8.09%, rgba(0, 142, 244, 0) 97.05%),
+                linear-gradient(0deg, rgba(0, 0, 0, 0.42), rgba(0, 0, 0, 0.42)),
+                url('{% web_pages/images/backgrounds/marketing.png %}');
+    border-radius: 8px;
+}
+.marketing .details_btn{
+    color: #F40067;
+}
+.design{
+    background: linear-gradient(0deg, #98F400 8.09%, rgba(0, 142, 244, 0) 97.05%),
+                linear-gradient(0deg, rgba(0, 0, 0, 0.42), rgba(0, 0, 0, 0.42)),
+                url('{% web_pages/images/backgrounds/design.png %}');
+    border-radius: 8px;
+}
+.design .details_btn{
+    color: #039F00;
+}
+.notes{
+    background: linear-gradient(0deg, #00F4BA 8.09%, rgba(0, 142, 244, 0) 97.05%),
+                linear-gradient(0deg, rgba(0, 0, 0, 0.42), rgba(0, 0, 0, 0.42)),
+                url('{% web_pages/images/backgrounds/notes.png %}');
+    border-radius: 8px;
+}
+.notes .details_btn{
+    color: #00AC83;
+}
+.office{
+    background: linear-gradient(0deg, #152C3D 8.09%, rgba(0, 142, 244, 0) 97.05%),
+                linear-gradient(0deg, rgba(0, 0, 0, 0.42), rgba(0, 0, 0, 0.42)),
+                url('{% web_pages/images/backgrounds/office.png %}');
+    border-radius: 8px;
+}
+.office .details_btn{
+    color: #152C3D;
+}
+
+
+
+
+
 
 
 
