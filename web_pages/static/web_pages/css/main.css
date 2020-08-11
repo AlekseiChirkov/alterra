@@ -32,7 +32,6 @@ a{
 
 .loading_wrapper{
     position: absolute;
-    top: -150px;
     animation: hide 6s;
     z-index: -1;
 }
@@ -62,7 +61,6 @@ a{
     width: 100%;
     height: 100%;
     position: absolute;
-    top: -150px;
     z-index: -1;
 }
 .video{
@@ -194,8 +192,7 @@ a{
 }
 .recommended{
     background: linear-gradient(0deg, #008EF4 8.09%, rgba(0, 142, 244, 0) 97.05%),
-                linear-gradient(0deg, rgba(0, 0, 0, 0.42), rgba(0, 0, 0, 0.42)),
-                url('{% web_pages/images/backgrounds/recommended.png %}');
+                linear-gradient(0deg, rgba(0, 0, 0, 0.42), rgba(0, 0, 0, 0.42));
     border-radius: 8px;
 }
 .recommended .details_btn{
@@ -204,8 +201,7 @@ a{
 }
 .marketing{
     background: linear-gradient(0deg, #F40067 8.09%, rgba(0, 142, 244, 0) 97.05%),
-                linear-gradient(0deg, rgba(0, 0, 0, 0.42), rgba(0, 0, 0, 0.42)),
-                url('{% web_pages/images/backgrounds/marketing.png %}');
+                linear-gradient(0deg, rgba(0, 0, 0, 0.42), rgba(0, 0, 0, 0.42));
     border-radius: 8px;
 }
 .marketing .details_btn{
@@ -214,8 +210,7 @@ a{
 }
 .design{
     background: linear-gradient(0deg, #98F400 8.09%, rgba(0, 142, 244, 0) 97.05%),
-                linear-gradient(0deg, rgba(0, 0, 0, 0.42), rgba(0, 0, 0, 0.42)),
-                url('{% web_pages/images/backgrounds/design.png %}');
+                linear-gradient(0deg, rgba(0, 0, 0, 0.42), rgba(0, 0, 0, 0.42));
     border-radius: 8px;
 }
 .design .details_btn{
@@ -224,8 +219,7 @@ a{
 }
 .notes{
     background: linear-gradient(0deg, #00F4BA 8.09%, rgba(0, 142, 244, 0) 97.05%),
-                linear-gradient(0deg, rgba(0, 0, 0, 0.42), rgba(0, 0, 0, 0.42)),
-                url('{% web_pages/images/backgrounds/notes.png %}');
+                linear-gradient(0deg, rgba(0, 0, 0, 0.42), rgba(0, 0, 0, 0.42));
     border-radius: 8px;
 }
 .notes .details_btn{
@@ -234,8 +228,7 @@ a{
 }
 .office{
     background: linear-gradient(0deg, #152C3D 8.09%, rgba(0, 142, 244, 0) 97.05%),
-                linear-gradient(0deg, rgba(0, 0, 0, 0.42), rgba(0, 0, 0, 0.42)),
-                url('{% web_pages/images/backgrounds/office.png %}');
+                linear-gradient(0deg, rgba(0, 0, 0, 0.42), rgba(0, 0, 0, 0.42));
     border-radius: 8px;
 }
 .office .details_btn{
@@ -251,18 +244,20 @@ a{
 
 
 .footer{
-    margin: 600px 0 0 0;
+    margin: 70vh 0 0 0;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    width: 100%;
 }
 .icons{
-    margin: 0 800px 0 0;
+    margin: 0;
+    width: 270px;
 }
 .icons a{
-    margin: 0 10px;
+    margin: 0 5px;
 }
 .request__btn{
-    width: 400px;
+    width: 270px;
     height: 60px;
     background: none;
     border: 2px solid #fff;

@@ -32,6 +32,7 @@ a{
 
 .loading_wrapper{
     position: absolute;
+    top: -1000px;
     animation: hide 6s;
     z-index: -1;
 }
@@ -58,9 +59,9 @@ a{
 
 
 .content{
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
     position: absolute;
+    top: -100px;
     z-index: -1;
 }
 .video{
@@ -149,7 +150,7 @@ a{
 
 
 .footer{
-    margin: 50% 0 0 0;
+    margin: 600px 0 0 0;
     display: flex;
     justify-content: center;
 }
