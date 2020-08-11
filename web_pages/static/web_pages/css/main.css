@@ -23,9 +23,13 @@ a{
     text-decoration: none;
     color: white;
 }
-.table{
-    margin: 0;
-    padding: 0;
+.menu li .active{
+    font-size: 26px;
+    font-weight: bold;
+    border-bottom: 2px solid #fff;
+}
+.logo:hover{
+    cursor: pointer;
 }
 
 
@@ -85,6 +89,7 @@ a{
     width: 100px;
     position: absolute;
     z-index: -1;
+    left: 45%;
     box-shadow: 0 -200px 180px 200px rgba(0,68,83,1);
 }
 .main_header{
@@ -108,6 +113,7 @@ a{
 }
 .menu li a:hover{
     font-weight: bold;
+    text-decoration: none;
 }
 .left_menu{
     display: flex;
@@ -125,18 +131,20 @@ a{
 }
 .dropdown__contacts{
     display: none;
-    padding: 50px;
+    padding: 20px;
     border: 2px solid #fff;
     border-radius: 8px;
     position: absolute;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
     transform: translateX(-35%);
     text-align: center;
 }
 .contacts{
     display: flex;
     justify-content: space-between;
+}
+.names{
+    margin: 0 20px 0 0;
 }
 .dropdown__useful{
     display: none;
@@ -176,6 +184,7 @@ a{
     font-size: 24px;
     line-height: 28px;
     text-align: center;
+    margin: 60px 0 0 0;
 }
 .cards p{
     font-family: 'Roboto', sans-serif;
@@ -184,7 +193,7 @@ a{
     font-size: 16px;
     line-height: 19px;
     text-align: center;
-    margin: 0 auto 100px auto;
+    margin: 20px auto 100px auto;
 }
 .arrow{
     width: 96px;
@@ -215,6 +224,34 @@ a{
     background: linear-gradient(0deg, #F40067 8.09%, rgba(0, 142, 244, 0) 97.05%),
                 linear-gradient(0deg, rgba(0, 0, 0, 0.42), rgba(0, 0, 0, 0.42));
     border-radius: 8px;
+}
+.hot{
+    position: absolute;
+    margin: -10px 0 0 70px;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-color: center;
+    text-align: center;
+    align-items: center;
+    border-radius: 100%;
+    background: #fff;
+    text-transform: uppercase;
+    color: #00A3FF;
+}
+.new{
+    position: absolute;
+    margin: -10px 0 0 70px;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-color: center;
+    text-align: center;
+    align-items: center;
+    border-radius: 100%;
+    background: #fff;
+    text-transform: uppercase;
+    color: #00A3FF;
 }
 .marketing .details_btn{
     color: #F40067;

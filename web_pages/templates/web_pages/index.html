@@ -29,6 +29,8 @@
 		</video>
 	</div>
 
+	<div class="light"></div>
+
 	<div id="carouselExampleIndicators" class="carousel slide" data-interval="false" data-ride="carousel">
 		<ol class="carousel-indicators">
 			<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -41,15 +43,14 @@
 					<div class="first_content">
 						<div class="main_header">
 							<ul class="left_menu menu">
-								<li>
-									<a href="">Услуги</a>
+								<li data-target="#carouselExampleIndicators" data-slide-to="1">
+									<a href="#">Услуги</a>
 								</li>
-								<li>
-									<a href="">Работы</a>
+								<li data-target="#carouselExampleIndicators" data-slide-to="2">
+									<a href="#">Работы</a>
 								</li>
 							</ul>
-							<div class="light"></div>
-							<img class="logo" src="{% static 'web_pages/images/logos/alterra_logo.svg' %}" alt="">
+							<img  data-target="#carouselExampleIndicators" data-slide-to="0" class="logo" src="{% static 'web_pages/images/logos/alterra_logo.svg' %}" alt="">
 							<ul class="right_menu menu">
 								<li class="dropdown">
 									<a href="">Контакты</a>
@@ -57,11 +58,13 @@
 										<div class="contacts">
 											<div class="names">
 												<a href="">Алексей</a><br>
-												<a href="">Али</a>
+												<a href="">Али</a><br>
+												<a href="">Санжар</a>
 											</div>
 											<div class="numbers">
 												<a href="https://wa.me/996559129557">+996559129557</a><br>
-												<a href="https://wa.me/996554508006">+996554508006</a>
+												<a href="https://wa.me/996554508006">+996554508006</a><br>
+												<a href="https://wa.me/996700063067">+996700063067</a>
 											</div>
 										</div>
 									</div>
@@ -76,11 +79,13 @@
 											<div class="details_btn">Подробнее</div>
 										</div>
 										<div class="cards marketing">
+											<div class="hot">Hot</div>
 											<h3>Рекомендации</h3>
 											<p>Наши рекомендации и полезности для вас</p>
 											<div class="details_btn">Подробнее</div>
 										</div>
 										<div class="cards design">
+											<div class="new">New</div>
 											<h3>Рекомендации</h3>
 											<p>Наши рекомендации и полезности для вас</p>
 											<div class="details_btn">Подробнее</div>
@@ -163,12 +168,142 @@
 				</div>
 			</div>
 			<div class="carousel-item">
-				<div class="about_us">
-					asdasdas
+				<div class="main_header">
+					<ul class="left_menu menu">
+						<li data-target="#carouselExampleIndicators" data-slide-to="1">
+							<a href="#" class="active">Услуги</a>
+						</li>
+						<li data-target="#carouselExampleIndicators" data-slide-to="2">
+							<a href="#">Работы</a>
+						</li>
+					</ul>
+					<img  data-target="#carouselExampleIndicators" data-slide-to="0" class="logo" src="{% static 'web_pages/images/logos/alterra_logo.svg' %}" alt="">
+					<ul class="right_menu menu">
+						<li class="dropdown">
+							<a href="">Контакты</a>
+							<div class="dropdown__content dropdown__contacts">
+								<div class="contacts">
+									<div class="names">
+										<a href="">Алексей</a><br>
+										<a href="">Али</a><br>
+										<a href="">Санжар</a>
+									</div>
+									<div class="numbers">
+										<a href="https://wa.me/996559129557">+996559129557</a><br>
+										<a href="https://wa.me/996554508006">+996554508006</a><br>
+										<a href="https://wa.me/996700063067">+996700063067</a>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="dropdown">
+							<a href="">Полезное</a>
+							<div class="dropdown__content dropdown__useful">
+								<div class="cards recommended">
+									<h3>Рекомендации</h3>
+									<p>Наши рекомендации и полезности для вас</p>
+									<img src="{% static 'web_pages/images/icons/arrow.png' %}" alt="arrow" class="arrow">
+									<div class="details_btn">Подробнее</div>
+								</div>
+								<div class="cards marketing">
+									<div class="hot">Hot</div>
+									<h3>Рекомендации</h3>
+									<p>Наши рекомендации и полезности для вас</p>
+									<div class="details_btn">Подробнее</div>
+								</div>
+								<div class="cards design">
+									<div class="new">New</div>
+									<h3>Рекомендации</h3>
+									<p>Наши рекомендации и полезности для вас</p>
+									<div class="details_btn">Подробнее</div>
+								</div>
+								<div class="cards notes">
+									<h3>Рекомендации</h3>
+									<p>Наши рекомендации и полезности для вас</p>
+									<div class="details_btn">Подробнее</div>
+								</div>
+								<div class="cards office">
+									<h3>Рекомендации</h3>
+									<p>Наши рекомендации и полезности для вас</p>
+									<div class="details_btn">Подробнее</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+
+				<div class="services">
+
 				</div>
 			</div>
 			<div class="carousel-item">
-				ывазофщшкоу
+				<div class="main_header">
+					<ul class="left_menu menu">
+						<li  data-target="#carouselExampleIndicators" data-slide-to="1">
+							<a href="#">Услуги</a>
+						</li>
+						<li  data-target="#carouselExampleIndicators" data-slide-to="2">
+							<a href="#" class="active">Работы</a>
+						</li>
+					</ul>
+					<img  data-target="#carouselExampleIndicators" data-slide-to="0" class="logo" src="{% static 'web_pages/images/logos/alterra_logo.svg' %}" alt="">
+					<ul class="right_menu menu">
+						<li class="dropdown">
+							<a href="">Контакты</a>
+							<div class="dropdown__content dropdown__contacts">
+								<div class="contacts">
+									<div class="names">
+										<a href="">Алексей</a><br>
+										<a href="">Али</a><br>
+										<a href="">Санжар</a>
+									</div>
+									<div class="numbers">
+										<a href="https://wa.me/996559129557">+996559129557</a><br>
+										<a href="https://wa.me/996554508006">+996554508006</a><br>
+										<a href="https://wa.me/996700063067">+996700063067</a>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="dropdown">
+							<a href="">Полезное</a>
+							<div class="dropdown__content dropdown__useful">
+								<div class="cards recommended">
+									<h3>Рекомендации</h3>
+									<p>Наши рекомендации и полезности для вас</p>
+									<img src="{% static 'web_pages/images/icons/arrow.png' %}" alt="arrow" class="arrow">
+									<div class="details_btn">Подробнее</div>
+								</div>
+								<div class="cards marketing">
+									<div class="hot">Hot</div>
+									<h3>Рекомендации</h3>
+									<p>Наши рекомендации и полезности для вас</p>
+									<div class="details_btn">Подробнее</div>
+								</div>
+								<div class="cards design">
+									<div class="new">New</div>
+									<h3>Рекомендации</h3>
+									<p>Наши рекомендации и полезности для вас</p>
+									<div class="details_btn">Подробнее</div>
+								</div>
+								<div class="cards notes">
+									<h3>Рекомендации</h3>
+									<p>Наши рекомендации и полезности для вас</p>
+									<div class="details_btn">Подробнее</div>
+								</div>
+								<div class="cards office">
+									<h3>Рекомендации</h3>
+									<p>Наши рекомендации и полезности для вас</p>
+									<div class="details_btn">Подробнее</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+
+				<div class="portfolio">
+
+				</div>
 			</div>
 		</div>
 		<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
