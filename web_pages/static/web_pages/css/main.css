@@ -15,6 +15,7 @@ body{
     padding: 0;
     margin: 0;
     background-color: black;
+    overflow-x: hidden;
 }
 ul{
     list-style: none;
@@ -486,3 +487,10 @@ a{
 
 
 
+.developed_by{
+    position: absolute;
+    bottom: -150px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
