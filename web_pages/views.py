@@ -1,7 +1,10 @@
 from django.contrib import messages
 from django.shortcuts import render, redirect
 
+from web_pages.models import Recommendation
+
 
 def index(request):
-    context = {}
+    recommendations = Recommendation.objects.order_by('date')[:4]
+    context = {'recommendations': recommendations}
     return render(request, 'web_pages/index.html', context)

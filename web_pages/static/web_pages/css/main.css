@@ -97,6 +97,11 @@ a{
 
 
 .main_header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 50;
     display: flex;
     justify-content: center;
     padding: 25px 0 0 0;
@@ -181,118 +186,90 @@ a{
     margin: 0 auto;
     text-align: center;
 }
-.cards h3{
+.title{
+    height: 50px;
+    margin: 20px 0 0 0;
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: bold;
-    font-size: 24px;
+    font-size: 22px;
     line-height: 28px;
     text-align: center;
-    margin: 60px 0 0 0;
 }
-.cards p{
+.text{
+    height: 350px;
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
     line-height: 19px;
     text-align: center;
-    margin: 20px auto 100px auto;
+    margin: 20px auto;
 }
 .arrow{
     width: 96px;
     height: 96px;
     padding: 15px;
+    margin: 0 0 154px 0;
     border-radius: 100%;
     background: rgba(0, 0, 0, 0.47);
 }
-.cards .details_btn{
-    width: 180px;
+.details_btn{
+
+}
+.details__link{
+    margin: 0 auto;
+    padding: 10px 0 0 0;
+    width: 90%;
     height: 40px;
-    background: #FFFFFF;
+    background: #fff;
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
     border-radius: 8px;
-    padding: 5px 0 0 0;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 19px;
     text-align: center;
+    color: #008EF4;
 }
-.recommended{
+.details_btn:hover{
+    cursor: pointer;
+    background: #008EF4;
+    color: #fff;
+}
+.recommended .text{
+    height: 100px;
+}
+.recommended, .recommendations{
     background: linear-gradient(0deg, #008EF4 8.09%, rgba(0, 142, 244, 0) 97.05%),
                 linear-gradient(0deg, rgba(0, 0, 0, 0.42), rgba(0, 0, 0, 0.42));
     border-radius: 8px;
 }
-.recommended .details_btn{
-    color: #008EF4;
-    margin: 103px auto 0 auto;
-}
-.marketing{
-    background: linear-gradient(0deg, #F40067 8.09%, rgba(0, 142, 244, 0) 97.05%),
-                linear-gradient(0deg, rgba(0, 0, 0, 0.42), rgba(0, 0, 0, 0.42));
-    border-radius: 8px;
-}
-.hot{
-    position: absolute;
-    margin: -10px 0 0 70px;
-    width: 60px;
-    height: 60px;
-    display: flex;
-    justify-color: center;
-    text-align: center;
-    align-items: center;
-    border-radius: 100%;
-    background: #fff;
+/*.new{
+    width: 50px;
+    height: 50px;
     text-transform: uppercase;
-    color: #00A3FF;
-}
-.new{
-    position: absolute;
-    margin: -10px 0 0 70px;
-    width: 60px;
-    height: 60px;
-    display: flex;
-    justify-color: center;
-    text-align: center;
-    align-items: center;
-    border-radius: 100%;
+    margin: -20px auto 0 auto;
+    padding: 10px 0 0 0;
     background: #fff;
-    text-transform: uppercase;
     color: #00A3FF;
-}
-.marketing .details_btn{
-    color: #F40067;
-    margin: 300px auto 0 auto;
-}
-.design{
-    background: linear-gradient(0deg, #98F400 8.09%, rgba(0, 142, 244, 0) 97.05%),
-                linear-gradient(0deg, rgba(0, 0, 0, 0.42), rgba(0, 0, 0, 0.42));
-    border-radius: 8px;
-}
-.design .details_btn{
-    color: #039F00;
-    margin: 300px auto 0 auto;
-}
-.notes{
-    background: linear-gradient(0deg, #00F4BA 8.09%, rgba(0, 142, 244, 0) 97.05%),
-                linear-gradient(0deg, rgba(0, 0, 0, 0.42), rgba(0, 0, 0, 0.42));
-    border-radius: 8px;
-}
-.notes .details_btn{
-    color: #00AC83;
-    margin: 300px auto 0 auto;
-}
-.office{
-    background: linear-gradient(0deg, #152C3D 8.09%, rgba(0, 142, 244, 0) 97.05%),
-                linear-gradient(0deg, rgba(0, 0, 0, 0.42), rgba(0, 0, 0, 0.42));
-    border-radius: 8px;
-}
-.office .details_btn{
-    color: #152C3D;
-    margin: 300px auto 0 auto;
-}
+    border-radius: 100%;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 28px;
+    text-align: center;
+}*/
+
+
 
 
 
 .footer{
-    margin: 70vh 0 0 0;
+    position: fixed;
+    bottom: 100px;
     display: flex;
     justify-content: space-around;
     width: 100%;
