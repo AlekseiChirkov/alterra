@@ -1,0 +1,24 @@
+{
+  "name": "frontend-sandbox",
+  "version": "1.0.0",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlterraDeveloper/Frontend-sandbox.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlterraDeveloper/Frontend-sandbox/issues"
+  },
+  "homepage": "https://github.com/AlterraDeveloper/Frontend-sandbox#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.1.0"
+  },
+  "dependencies": {},
+  "description": ""
+}
