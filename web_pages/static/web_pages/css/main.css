@@ -36,17 +36,16 @@ a{
 
 
 .loading_wrapper{
-    width: 100%;
-    height: 100%;
     position: absolute;
     animation: hide 6s;
     z-index: -1;
+    overflow: hidden;
 }
 .loading_wrapper .video{
-    width: 100%;
-    height: 100%;
     margin: 0;
     padding: 0;
+    width: 1920px;
+    overflow: hidden;
 }
 @keyframes hide {
   0% {
@@ -92,6 +91,8 @@ a{
     height: 100vh;
     position: absolute;
     background: none;
+    display: flex;
+    justify-content: center;
 }
 
 
@@ -167,7 +168,7 @@ a{
     display: flex;
     align-items: center;
     position: absolute;
-    background: rgba(0, 0, 0, 0.1);
+    background: rgba(0, 0, 0, 0.2);
 }
 .dropdown:hover .dropdown__useful{
     padding: 20px;
@@ -263,7 +264,107 @@ a{
     text-align: center;
 }*/
 
+.services{
+    display: flex;
+    justify-content: center;
+    margin: 100px auto 0 auto;
+    width: 70%;
+    height: 580px;
+}
+.a{
+    grid-area: a;
+}
+.b{
+    grid-area: b;
+}
+.c{
+    grid-area: c;
+}
+.d{
+    grid-area: d;
+}
+.e{
+    grid-area: e;
+}
+.f{
+    grid-area: f;
+}
+.service__content{
+    display: grid;
+    justify-content: center;
+    grid-template-areas: 'a c d b'
+                         'a e f b';
+}
+.service__element{
+    width: 240px;
+    height: 580px;
+    margin: 10px;
+    background: linear-gradient(0deg, #008EF4 8.09%, rgba(0, 142, 244, 0) 97.05%),
+                linear-gradient(0deg, rgba(0, 0, 0, 0.42), rgba(0, 0, 0, 0.42));
+    border-radius: 8px;
+}
+.center_element{
+    height: 280px;
+}
 
+
+
+
+
+
+.a1{
+    grid-area: a1;
+}
+.b2{
+    grid-area: b2;
+}
+.c3{
+    grid-area: c3;
+}
+.d4{
+    grid-area: d4;
+}
+.portfolio{
+    margin: 100px auto 0 auto;
+    width: 70%;
+    height: 550px;
+    display: grid;
+    justify-content: center;
+    grid-template-areas: 'a1 b2 d4'
+                         'a1 c3 d4';
+}
+.portfolio h3{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    color: #FFFFFF;
+}
+.portfolio p{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: #CBCBCB;
+}
+.portfolio__element_float{
+    margin: 10px;
+    width: 336px;
+    height: 580px;
+    background: linear-gradient(180deg, #152C3D 0%, rgba(0, 142, 244, 0) 100%),
+                linear-gradient(180deg, #010203 0%, rgba(0, 142, 244, 0) 96.65%);
+    border-radius: 8px;
+}
+.center_p{
+    margin: 10px;
+    width: 336px;
+    height: 200px;
+    background: linear-gradient(180deg, #152C3D 0%, rgba(0, 142, 244, 0) 100%),
+                linear-gradient(180deg, #010203 0%, rgba(0, 142, 244, 0) 96.65%);
+    border-radius: 8px;
+}
 
 
 
