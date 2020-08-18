@@ -305,8 +305,52 @@ a{
 }
 .center_element{
     height: 280px;
+    display: grid;
+    justify-content: center;
 }
-
+.center_element h3{
+    margin: 0;
+}
+.center_element .service__footer h3{
+    margin: 20px 0 0 0;
+}
+.center_element .service__footer .service__btn{
+    margin: 10px auto 0 auto;
+}
+.float_left .service__footer{
+    position: absolute;
+    bottom: 0;
+    width: 240px;
+    margin: 0 0 20px 0;
+    display: grid;
+    justify-content: center;
+}
+.float_right .service__footer{
+    position: absolute;
+    bottom: 0;
+    width: 240px;
+    margin: 0 0 20px 0;
+    display: grid;
+    justify-content: center;
+}
+.service__footer h3{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #FFFFFF;
+}
+.service__btn{
+    padding: 5px 0 0 0;
+    width: 215px;
+    height: 40px;
+    color: #003053;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+}
 
 
 
@@ -349,9 +393,9 @@ a{
     line-height: 29px;
     color: #CBCBCB;
 }
-.portfolio__element_float{
+.portfolio__element_float_left{
     margin: 10px;
-    width: 336px;
+    width: 300px;
     height: 580px;
     background: linear-gradient(180deg, #152C3D 0%, rgba(0, 142, 244, 0) 100%),
                 linear-gradient(180deg, #010203 0%, rgba(0, 142, 244, 0) 96.65%);
@@ -359,12 +403,38 @@ a{
 }
 .center_p{
     margin: 10px;
-    width: 336px;
+    width: 300px;
     height: 200px;
     background: linear-gradient(180deg, #152C3D 0%, rgba(0, 142, 244, 0) 100%),
                 linear-gradient(180deg, #010203 0%, rgba(0, 142, 244, 0) 96.65%);
     border-radius: 8px;
 }
+.portfolio__element_float_right{
+    margin: 10px;
+    width: 600px;
+    height: 580px;
+    background: linear-gradient(180deg, #152C3D 0%, rgba(0, 142, 244, 0) 100%),
+                linear-gradient(180deg, #010203 0%, rgba(0, 142, 244, 0) 96.65%);
+    border-radius: 8px;
+}
+.portfolio h3{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    color: #FFFFFF;
+}
+.portfolio p{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: #CBCBCB;
+}
+
+
 
 
 

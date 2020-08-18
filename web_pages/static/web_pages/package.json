@@ -16,6 +16,7 @@
   },
   "homepage": "https://github.com/AlterraDeveloper/Frontend-sandbox#readme",
   "devDependencies": {
+    "browser-sync": "^2.26.12",
     "gulp": "^4.0.2",
     "gulp-sass": "^4.1.0"
   },
