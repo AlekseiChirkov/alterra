@@ -78,6 +78,10 @@
       align-items: center; }
       .intro__content .section-footer__icons a + a {
         margin: 0 10px; }
+      .intro__content .section-footer__icons img[src*="whatsapp"]:hover {
+        background-color: #25d366; }
+      .intro__content .section-footer__icons a {
+        text-decoration: none; }
       .intro__content .section-footer__request-btn {
         width: 250px;
         height: 50px;
