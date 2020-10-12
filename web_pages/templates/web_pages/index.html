@@ -6,37 +6,196 @@
 	<meta content="width=device-width, initial-scale=1" name="viewport" />
 	<title>AlTerra Creative Agency</title>
 	{% load static %}
-	<!-- <link rel="stylesheet" href="{% static 'web_pages/css/main.css' %}" type="text/css"> -->
+	<!-- style.css -->
 	<link rel="stylesheet" href="{% static 'web_pages/css/style.css' %}" type="text/css">
-
+	<!-- font awesome -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- bootstrap -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
 		integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	<!-- jQuery -->
 	<script src="https://code.jquery.com/jquery-3.5.1.min.js"
 		integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
 </head>
 
 <body>
+	<!--<div class="loading">
+		<video class="intro__media-video" src="{% static '/web_pages/videos/intro.mp4' %}" autoplay muted></video>
+	</div>-->
+
 	<div class="intro">
 		<div class="intro__media">
 			<video class="intro__media-video" src="{% static '/web_pages/videos/infiniti_animation.mp4' %}" autoplay
 				muted loop></video>
 		</div>
+
 		<div class="intro__content container-fluid">
-			<div class="section-header row">
-				<nav class="section-header__left-menu nav col-3">
-					<a class="nav-link " href="#">Услуги</a>
-					<a class="nav-link" href="#">Работы</a>
+			<div class="section-header">
+				<nav class="section-header__left-menu nav">
+					<div id="service" class="nav-link" data-target="#carouselExampleIndicators" data-slide-to="1">
+						Услуги
+					</div>
+					<div id="portfolio" class="nav-link" data-target="#carouselExampleIndicators" data-slide-to="2">
+						Работы
+					</div>
 				</nav>
-				<a class="section-header__logo navbar-brand col-3" href="#">
+				<a class="section-header__logo" href="#">
 					<img src="{% static 'web_pages/images/logos/alterra_logo.svg' %}">
 				</a>
-				<nav class="section-header__right-menu nav col-auto">
-					<a class="nav-link" href="#">Контакты</a>
-					<a class="nav-link" href="#">Полезное</a>
+				<nav class="section-header__right-menu nav">
+					<div class="nav-link contacts" id="contacts">
+						Контакты
+						<div class="contacts-block" id="contacts-block">
+							<div class="contacts-wrapper">
+								<div class="contact-element alex">
+									<div class="contact-name">
+										<h2 class="firstname">Алексей</h2>
+									</div>
+									<div class="contact-numbers left-numbers">
+										<div class="whatsapp">Whats App</div>
+										<div class="number">+996 559 12 95 57</div>
+									</div>
+								</div>
+								<div class="contact-element sancho">
+									<div class="contact-name">
+										<h2 class="firstname">Алексей</h2>
+									</div>
+									<div class="contact-numbers">
+										<div class="whatsapp">Whats App</div>
+										<div class="number">+996 559 12 95 57</div>
+									</div>
+								</div>
+								<div class="contact-element ali">
+									<div class="contact-name">
+										<h2 class="firstname">Алексей</h2>
+									</div>
+									<div class="contact-numbers">
+										<div class="whatsapp">Whats App</div>
+										<div class="number">+996 559 12 95 57</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="nav-link useful" id="useful">
+						Полезное
+					</div>
 				</nav>
 			</div>
-			<div class="section-main"></div>
+
+			<div class="section-main">
+				<div class="section-main__container">
+					<div id="carouselExampleIndicators" class="section-main__carousel carousel slide" data-ride="carousel">
+						<ol class="carousel-indicators">
+							<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+						</ol>
+
+						<div class="carousel-inner">
+							<div class="section-one carousel-item active">
+								<img src="" alt="">
+							</div>
+							<div class="section-two carousel-item">
+								<div class="services">
+									<div class="services__side-service">
+										<h6 class="side-service-h6">Дизайн студия</h6>
+										<p class="side-service-p">Что делаем</p>
+										<div class="design-footer">
+											<p class="design-footer-p">Наши рекомендации и полезности для Вас</p>
+											<button class="details">
+												Подробнее
+											</button>
+										</div>
+									</div>
+									<div class="services__center-service">
+										<div class="block-service-top">
+											<h6>Дизайн студия</h6>
+											<div class="design-footer">
+											<p class="design-footer-p">Наши рекомендации и полезности для Вас</p>
+											<button class="details">
+												Подробнее
+											</button>
+										</div>
+										</div>
+										<div class="block-service-top">
+											<h6>Дизайн студия</h6>
+											<div class="design-footer">
+											<p class="design-footer-p">Наши рекомендации и полезности для Вас</p>
+											<button class="details">
+												Подробнее
+											</button>
+										</div>
+										</div>
+										<div class="block-service-bottom">
+											<h6>Дизайн студия</h6>
+											<div class="design-footer">
+											<p class="design-footer-p">Наши рекомендации и полезности для Вас</p>
+											<button class="details">
+												Подробнее
+											</button>
+										</div>
+										</div>
+										<div class="block-service-bottom">
+											<h6>Дизайн студия</h6>
+											<div class="design-footer">
+											<p class="design-footer-p">Наши рекомендации и полезности для Вас</p>
+											<button class="details">
+												Подробнее
+											</button>
+										</div>
+										</div>
+									</div>
+									<div class="services__side-service">
+										<h6 class="side-service-h6">Дизайн студия</h6>
+										<p class="side-service-p">Что делаем</p>
+										<div class="design-footer">
+											<p class="design-footer-p">Наши рекомендации и полезности для Вас</p>
+											<button class="details">
+												Подробнее
+											</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="section-three carousel-item">
+								<div class="portfolio">
+									<div class="portfolio__left-side">
+										<div class="element block-1">
+											<h6>Проект</h6>
+											<p>Описание</p>
+										</div>
+										<div class="element block-2">
+											<h6>Проект</h6>
+											<p>Описание</p>
+										</div>
+										<div class="element block-3">
+											<h6>Проект</h6>
+											<p>Описание</p>
+										</div>
+									</div>
+									<div class="portfolio__right-side">
+										<div class="element">
+											<h6>Проект</h6>
+											<p>Описание</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							<span class="sr-only">Previous</span>
+						</a>
+						<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+							<span class="carousel-control-next-icon" aria-hidden="true"></span>
+							<span class="sr-only">Next</span>
+						</a>
+					</div>
+				</div>
+			</div>
+
 			<div class="section-footer">
 				<div class="section-footer__icons">
 					<a href="" class="social_icons">
@@ -63,131 +222,9 @@
 			</div>
 		</div>
 	</div>
-	</div>
-
-	<!-- <div id="carouselExampleIndicators" class="carousel slide" data-interval="false" data-ride="carousel">
-		<ol class="carousel-indicators">
-			<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-			<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-			<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-		</ol>
-		<div class="carousel-inner">
-			<div class="carousel-item active">
-
-			</div>
-
-			<div class="carousel-item">
-				<div class="services">
-					<div class="service__content">
-						<div class="service__element float_left a">
-							<h3>Услуга</h3>
-							<p>Описание</p>
-							<div class="service__footer">
-								<h3>Текст</h3>
-								<div class="service__btn">Подробнее</div>
-							</div>
-						</div>
-						<div class="service__element float_right b">
-							<h3>Услуга</h3>
-							<p>Описание</p>
-							<div class="service__footer">
-								<h3>Текст</h3>
-								<div class="service__btn">Подробнее</div>
-							</div>
-						</div>
-						<div class="service__element center_element c">
-							<h3>Услуга</h3>
-							<p>Описание</p>
-							<div class="service__footer">
-								<h3>Текст</h3>
-								<div class="service__btn">Подробнее</div>
-							</div>
-						</div>
-						<div class="service__element center_element d">
-							<h3>Услуга</h3>
-							<p>Описание</p>
-							<div class="service__footer">
-								<h3>Текст</h3>
-								<div class="service__btn">Подробнее</div>
-							</div>
-						</div>
-						<div class="service__element center_element e">
-							<h3>Услуга</h3>
-							<p>Описание</p>
-							<div class="service__footer">
-								<h3>Текст</h3>
-								<div class="service__btn">Подробнее</div>
-							</div>
-						</div>
-						<div class="service__element center_element f">
-							<h3>Услуга</h3>
-							<p>Описание</p>
-							<div class="service__footer">
-								<h3>Текст</h3>
-								<div class="service__btn">Подробнее</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="carousel-item">
-				<div class="portfolio">
-					<div class="portfolio__element_float_left a1">
-						<h3>Проект</h3>
-						<p>Описание</p>
-					</div>
-					<div class="portfolio__element center_p b2">
-						<h3>Проект</h3>
-						<p>Описание</p>
-					</div>
-					<div class="portfolio__element center_p c3">
-						<h3>Проект</h3>
-						<p>Описание</p>
-					</div>
-					<div class="portfolio__element_float_right d4">
-						<h3>Проект</h3>
-						<p>Описание</p>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-			<span class="sr-only">Previous</span>
-		</a>
-		<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-			<span class="carousel-control-next-icon" aria-hidden="true"></span>
-			<span class="sr-only">Next</span>
-		</a>
-	</div>
 
 
-	<div class="footer">
-		<div class="icons">
-			<a href="" class="social_icons">
-				<img src="{% static 'web_pages/images/icons/whatsapp.png' %}" alt="">
-			</a>
-			<a href="" class="social_icons">
-				<img src="{% static 'web_pages/images/icons/telegram.png' %}" alt="">
-			</a>
-			<a href="" class="social_icons">
-				<img src="{% static 'web_pages/images/icons/vkontakte.png' %}" alt="">
-			</a>
-			<a href="" class="social_icons">
-				<img src="{% static 'web_pages/images/icons/facebook.png' %}" alt="">
-			</a>
-			<a href="" class="social_icons">
-				<img src="{% static 'web_pages/images/icons/instagram.png' %}" alt="">
-			</a>
-		</div>
-		<div class="request">
-			<button class="request__btn">
-				ОСТАВИТЬ ЗАЯВКУ
-			</button>
-		</div>
-	</div> -->
+
 
 
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
