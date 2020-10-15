@@ -1,21 +1,28 @@
 // Modal window
-var modal = document.getElementById("contacts-block");
-var btn = document.getElementById("contacts");
-var service = document.getElementById("service");
-var portfolio = document.getElementById("portfolio");
 
 
-btn.onclick = function() {
-  modal.style.display = "block";
+var contacts_modal = document.getElementById("contacts-block");
+var contacts_open = document.getElementById("contacts");
+
+contacts_open.onclick = function() {
+    if (contacts_modal.style.display === "none") {
+        contacts_modal.style.display = "block";
+    } else {
+        contacts_modal.style.display = "none";
+    }
 }
 
-service.onclick = function() {
-    modal.style.display = "none";
+var useful_modal = document.getElementById("useful-block");
+var useful_open = document.getElementById("useful");
+
+useful_open.onclick = function() {
+    if (useful_modal.style.display === "none") {
+        useful_modal.style.display = "flex";
+    } else {
+        useful_modal.style.display = "none";
+    }
 }
 
-portfolio.onclick = function() {
-    modal.style.display = "none";
-}
 
 
 // Video background
