@@ -48,31 +48,43 @@
 					</div>
 					<div class="contacts-block" id="contacts-block">
 						<div class="contacts-wrapper">
-							<div class="contact-element alex">
-								<div class="contact-name">
-									<h2 class="firstname">Алексей</h2>
+							<div class="contacts-wrapper__contact-name contact-name-1">
+								<div class="contacts-wrapper__name">
+									Алексей
 								</div>
-								<div class="contact-numbers left-numbers">
-									<div class="whatsapp">Whats App</div>
-									<div class="number">+996 559 12 95 57</div>
-								</div>
-							</div>
-							<div class="contact-element sancho">
-								<div class="contact-name">
-									<h2 class="firstname">Алексей</h2>
-								</div>
-								<div class="contact-numbers">
-									<div class="whatsapp">Whats App</div>
-									<div class="number">+996 559 12 95 57</div>
+								<div class="contacts-wrapper__phone  phone-1">
+									<button class="contacts-wrapper__phone-btn phone-btn-1">
+										WhatsApp
+									</button>
+									<button class="contacts-wrapper__phone-btn phone-btn-2">
+										+996559129557
+									</button>
 								</div>
 							</div>
-							<div class="contact-element ali">
-								<div class="contact-name">
-									<h2 class="firstname">Алексей</h2>
+							<div class="contacts-wrapper__contact-name contact-name-2">
+								<div class="contacts-wrapper__name">
+									Алексей
 								</div>
-								<div class="contact-numbers">
-									<div class="whatsapp">Whats App</div>
-									<div class="number">+996 559 12 95 57</div>
+								<div class="contacts-wrapper__phone  phone-2">
+									<button class="contacts-wrapper__phone-btn phone-btn-1">
+										WhatsApp
+									</button>
+									<button class="contacts-wrapper__phone-btn phone-btn-2">
+										+996559129557
+									</button>
+								</div>
+							</div>
+							<div class="contacts-wrapper__contact-name contact-name-3">
+								<div class="contacts-wrapper__name">
+									Алексей
+								</div>
+								<div class="contacts-wrapper__phone phone-3">
+									<button class="contacts-wrapper__phone-btn phone-btn-1">
+										WhatsApp
+									</button>
+									<button class="contacts-wrapper__phone-btn phone-btn-2">
+										+996559129557
+									</button>
 								</div>
 							</div>
 						</div>
@@ -81,31 +93,14 @@
 						Полезное
 					</div>
 					<div class="useful-block" id="useful-block">
-						<div class="useful-block__content useful-1">
-							<div class="head">Рекомендации</div>
-							<div class="p">Наши рекомендации и полезности для вас</div>
-							<div class="details">Подробнее</div>
+						{% for recommendation in recommendations %}
+						<div class="useful-block__content"
+							 style="background-image:url('/media/{{ recommendation.bg_image }}');">
+							<h6 class="head">{{ recommendation.title }}</h6>
+							<p class="p">{{ recommendation.text }}</p>
+							<button class="details">Подробнее</button>
 						</div>
-						<div class="useful-block__content useful-2">
-							<div class="head">Рекомендации</div>
-							<div class="p">Наши рекомендации и полезности для вас</div>
-							<div class="details">Подробнее</div>
-						</div>
-						<div class="useful-block__content useful-3">
-							<div class="head">Рекомендации</div>
-							<div class="p">Наши рекомендации и полезности для вас</div>
-							<div class="details">Подробнее</div>
-						</div>
-						<div class="useful-block__content useful-4">
-							<div class="head">Рекомендации</div>
-							<div class="p">Наши рекомендации и полезности для вас</div>
-							<div class="details">Подробнее</div>
-						</div>
-						<div class="useful-block__content useful-5">
-							<div class="head">Рекомендации</div>
-							<div class="p">Наши рекомендации и полезности для вас</div>
-							<div class="details">Подробнее</div>
-						</div>
+						{% endfor %}
 					</div>
 				</nav>
 			</div>
@@ -125,60 +120,68 @@
 							</div>
 							<div class="section-two carousel-item">
 								<div class="services">
-									<div class="services__side-service">
-										<h6 class="side-service-h6">Дизайн студия</h6>
-										<p class="side-service-p">Что делаем</p>
-										<div class="design-footer">
-											<p class="design-footer-p">Наши рекомендации и полезности для Вас</p>
-											<button class="details">
+									<div class="services__content service-1">
+										<h6 class="services__head">Разработка сайтов</h6>
+										<div class="services__footer sides-footer">
+											<p class="services__paragraph">
+												Наши рекомендации для вас
+											</p>
+											<button class="services__details-btn">
 												Подробнее
 											</button>
 										</div>
 									</div>
-									<div class="services__center-service">
-										<div class="block-service-top">
-											<h6>Дизайн студия</h6>
-											<div class="design-footer">
-											<p class="design-footer-p">Наши рекомендации и полезности для Вас</p>
-											<button class="details">
+									<div class="services__content service-2">
+										<h6 class="services__head">Разработка сайтов</h6>
+										<div class="services__footer">
+											<p class="services__paragraph">
+												Наши рекомендации для вас
+											</p>
+											<button class="services__details-btn">
 												Подробнее
 											</button>
-										</div>
-										</div>
-										<div class="block-service-top">
-											<h6>Дизайн студия</h6>
-											<div class="design-footer">
-											<p class="design-footer-p">Наши рекомендации и полезности для Вас</p>
-											<button class="details">
-												Подробнее
-											</button>
-										</div>
-										</div>
-										<div class="block-service-bottom">
-											<h6>Дизайн студия</h6>
-											<div class="design-footer">
-											<p class="design-footer-p">Наши рекомендации и полезности для Вас</p>
-											<button class="details">
-												Подробнее
-											</button>
-										</div>
-										</div>
-										<div class="block-service-bottom">
-											<h6>Дизайн студия</h6>
-											<div class="design-footer">
-											<p class="design-footer-p">Наши рекомендации и полезности для Вас</p>
-											<button class="details">
-												Подробнее
-											</button>
-										</div>
 										</div>
 									</div>
-									<div class="services__side-service">
-										<h6 class="side-service-h6">Дизайн студия</h6>
-										<p class="side-service-p">Что делаем</p>
-										<div class="design-footer">
-											<p class="design-footer-p">Наши рекомендации и полезности для Вас</p>
-											<button class="details">
+									<div class="services__content service-3">
+										<h6 class="services__head">Разработка сайтов</h6>
+										<div class="services__footer">
+											<p class="services__paragraph">
+												Наши рекомендации для вас
+											</p>
+											<button class="services__details-btn">
+												Подробнее
+											</button>
+										</div>
+									</div>
+									<div class="services__content service-4">
+										<h6 class="services__head">Разработка сайтов</h6>
+										<div class="services__footer">
+											<p class="services__paragraph">
+												Наши рекомендации для вас
+											</p>
+											<button class="services__details-btn">
+												Подробнее
+											</button>
+										</div>
+									</div>
+									<div class="services__content service-5">
+										<h6 class="services__head">Разработка сайтов</h6>
+										<div class="services__footer">
+											<p class="services__paragraph">
+												Наши рекомендации для вас
+											</p>
+											<button class="services__details-btn">
+												Подробнее
+											</button>
+										</div>
+									</div>
+									<div class="services__content service-6">
+										<h6 class="services__head">Разработка сайтов</h6>
+										<div class="services__footer sides-footer">
+											<p class="services__paragraph">
+												Наши рекомендации для вас
+											</p>
+											<button class="services__details-btn">
 												Подробнее
 											</button>
 										</div>
@@ -187,25 +190,21 @@
 							</div>
 							<div class="section-three carousel-item">
 								<div class="portfolio">
-									<div class="portfolio__left-side">
-										<div class="element block-1">
-											<h6>Проект</h6>
-											<p>Описание</p>
-										</div>
-										<div class="element block-2">
-											<h6>Проект</h6>
-											<p>Описание</p>
-										</div>
-										<div class="element block-3">
-											<h6>Проект</h6>
-											<p>Описание</p>
-										</div>
+									<div class="portfolio__content portfolio-1">
+										<h6 class="portfolio__head">Проект</h6>
+										<p class="portfolio__paragraph">Описание</p>
 									</div>
-									<div class="portfolio__right-side">
-										<div class="element">
-											<h6>Проект</h6>
-											<p>Описание</p>
-										</div>
+									<div class="portfolio__content portfolio-2">
+										<h6 class="portfolio__head">Проект</h6>
+										<p class="portfolio__paragraph">Описание</p>
+									</div>
+									<div class="portfolio__content portfolio-3">
+										<h6 class="portfolio__head">Проект</h6>
+										<p class="portfolio__paragraph">Описание</p>
+									</div>
+									<div class="portfolio__content portfolio-4">
+										<h6 class="portfolio__head">Проект</h6>
+										<p class="portfolio__paragraph">Описание</p>
 									</div>
 								</div>
 							</div>
