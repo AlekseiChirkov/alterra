@@ -429,7 +429,7 @@ body {
           margin: auto; }
         .intro__content .section-footer__request-block .request-form {
           margin: auto;
-          width: 50%;
+          width: auto;
           background: #fff;
           border-radius: 8px; }
           .intro__content .section-footer__request-block .request-form .form {
