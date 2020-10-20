@@ -45,6 +45,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    # Libraries
+    'multiselectfield',
 ]
 
 AUTH_USER_MODEL = 'authentication.MyUser'

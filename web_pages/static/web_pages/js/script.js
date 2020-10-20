@@ -5,7 +5,7 @@ $(document).on("click", ".nav .nav-link", function(){
 });
 
 
-// Modal window
+// Modal windows
 
 var contacts_modal = document.getElementById("contacts-block");
 var contacts_open = document.getElementById("contacts");
@@ -29,6 +29,29 @@ useful_open.onclick = function() {
     }
 }
 
+var request_modal = document.getElementById("request-block");
+var request_open = document.getElementById("request");
+
+request_open.onclick = function() {
+    if (request_modal.style.display != "flex") {
+        request_modal.style.display = "flex";
+    } else {
+        request_modal.style.display = "none";
+    }
+}
+
+function closeForm() {
+  document.getElementById("request-block").style.display = "none";
+}
+
+
+$("ul#id_service_types > li").on("click", function() {
+    $(this).toggleClass('selected');
+    var selectedIds = $('.selected').map(function() {
+    	return this.id;
+    }).get();
+    console.log(selectedIds);
+});
 
 
 // Video background

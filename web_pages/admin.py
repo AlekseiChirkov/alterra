@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-from web_pages.models import Recommendation
+from web_pages.models import Recommendation, Request
 
 
 class RecommendationAdmin(admin.ModelAdmin):
@@ -10,4 +10,12 @@ class RecommendationAdmin(admin.ModelAdmin):
         model = Recommendation
 
 
+class RequestAdmin(admin.ModelAdmin):
+    list_display = [field.name for field in Request._meta.fields]
+
+    class Meta:
+        model = Request
+
+
 admin.site.register(Recommendation, RecommendationAdmin)
+admin.site.register(Request, RequestAdmin)

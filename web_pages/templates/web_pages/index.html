@@ -240,10 +240,42 @@
 						<img src="{% static 'web_pages/images/icons/instagram.png' %}" alt="">
 					</a>
 				</div>
-				<div class="section-footer__request">
-					<button class="section-footer__request-btn">
-						ОСТАВИТЬ ЗАЯВКУ
-					</button>
+				<div class="section-footer__request" id="request">
+					ОСТАВИТЬ ЗАЯВКУ
+				</div>
+				<div class="section-footer__request-block" id="request-block">
+					<div class="request-logo">
+						<img src="{% static 'web_pages/images/logos/request_logo.png' %}" alt="">
+					</div>
+					<div class="request-form">
+						<form action="" method="post" class="form">{% csrf_token %}
+							<div class="form-header">Заполните заявку<br><hr></div>
+							<div class="left-form">
+								<p>Имя:<br>{{ form.first_name }}<br></p>
+								<p>Фамилия:<br>{{ form.last_name }}<br></p>
+								<p>Телефон:<br>{{ form.phone }}<br></p>
+								<p>Email:<br>{{ form.email }}<br></p>
+								<p>Название компании:<br>{{ form.company_name }}<br></p>
+								<p class="span">
+									<span class="required">*</span>
+									Мы свяжемся с вами после того, как заявка будет обработана
+								</p>
+							</div>
+							<div class="right-form">
+								<p>
+									Деятельность компании:<br>{{ form.company_activity }}
+								</p>
+								<p class="choices">
+									Выберите услуги в которых нуждается ваша компания:<br>
+									{{ form.service_types }}
+								</p>
+								<div class="request-buttons">
+									<button class="btn cancel" onclick="closeForm()">Отмена</button>
+									<button type="submit" formmethod="post" class="btn apply">Отправить</button>
+								</div>
+							</div>
+						</form>
+					</div>
 				</div>
 			</div>
 		</div>
