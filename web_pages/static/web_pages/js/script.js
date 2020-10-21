@@ -1,3 +1,11 @@
+// Burger menu
+$(document).ready(function(){
+	$('.header__burger').click(function(event){
+		$('.header__burger, .header__menu').toggleClass('active');
+		$('body').toggleClass('lock');
+	})
+});
+
 // Active class on header element
 
 $(document).on("click", ".nav .nav-link", function(){
@@ -61,14 +69,5 @@ vid.playbackRate = 0.7;
 setTimeout(function(){
     document.getElementById("video").play();
 }, 8000);
-
-
-// Burger menu
-$(document).ready(function(){
-	$('.header__burger').click(function(event){
-		$('.header__burger, .header__menu').toggleClass('active');
-		$('body').toggleClass('lock');
-	});
-});
 
 
