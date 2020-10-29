@@ -19,9 +19,9 @@
 </head>
 
 <body>
-	<div class="loading">
-		<video class="intro__media-video" src="{% static '/web_pages/videos/intro.mp4' %}" autoplay muted></video>
-	</div>
+<!--	<div class="loading">-->
+<!--		<video class="intro__media-video" src="{% static '/web_pages/videos/intro.mp4' %}" autoplay muted></video>-->
+<!--	</div>-->
 
 	<div class="intro">
 		<div class="intro__media">
@@ -107,14 +107,15 @@
 
 			<div class="section-main">
 				<div class="section-main__container">
-					<div id="carouselExampleIndicators" class="section-main__carousel carousel slide" data-ride="carousel">
+					<div id="carouselExampleIndicators"
+						 class="section-main__carousel carousel slide" data-ride="carousel">
 						<ol class="carousel-indicators">
 							<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
 							<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
 							<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
 						</ol>
 
-						<div class="carousel-inner">
+						<div class="carousel-inner" id="carousel-wheel" data-interval="5000">
 							<div class="section-one carousel-item active">
 								<img src="" alt="">
 							</div>
@@ -282,10 +283,14 @@
 	</div>
 
 	<div class="wrapper">
-		<div class="loading">
+		<!--<div class="loading">
 			<video class="intro__media-video" src="{% static '/web_pages/videos/intro.mp4' %}" autoplay muted></video>
-		</div>
+		</div>-->
 
+		<div class="wrapper__media">
+			<video class="intro__media-video" src="{% static '/web_pages/videos/infiniti_animation.mp4' %}" autoplay
+				muted loop></video>
+		</div>
 
         <div class="container">
             <div class="header">
@@ -299,7 +304,7 @@
                     <nav class="header__menu">
                         <ul class="header__list">
                             <li>
-                                <a href="#" class="header__link active">Услуги</a>
+                                <a href="#" class="header__link">Услуги</a>
                             </li>
                             <li>
                                 <a href="#" class="header__link">Работы</a>
@@ -316,9 +321,8 @@
             </div>
         </div>
 
-		<div class="wrapper__media">
-			<video class="intro__media-video" src="{% static '/web_pages/videos/infiniti_animation.mp4' %}" autoplay
-				muted loop></video>
+		<div class="content">
+
 		</div>
     </div>
 

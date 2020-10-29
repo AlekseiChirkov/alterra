@@ -3,8 +3,17 @@ $(document).ready(function(){
 	$('.header__burger').click(function(event){
 		$('.header__burger, .header__menu').toggleClass('active');
 		$('body').toggleClass('lock');
-	})
+	});
+	$('.header__list>li>.header__link').click(function(event){
+	    if ($(this).hasClass('active-link')){
+	        $(this).removeClass('active-link');
+	    }else{
+	        $('.header__link').removeClass('active-link');
+	        $(this).addClass('active-link')
+	    }
+	});
 });
+
 
 // Active class on header element
 
@@ -52,6 +61,7 @@ function closeForm() {
   document.getElementById("request-block").style.display = "none";
 }
 
+// Choice fields
 
 $("ul#id_service_types > li").on("click", function() {
     $(this).toggleClass('selected');
@@ -60,7 +70,6 @@ $("ul#id_service_types > li").on("click", function() {
     }).get();
     console.log(selectedIds);
 });
-
 
 // Video background
 var vid = document.getElementById("video");
